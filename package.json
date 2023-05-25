@@ -1,0 +1,17 @@
+{
+  "name": "tailwindcss-captive-portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"npx tailwindcss -i tailwind.css -o ./assets/css/style.css  --watch",
+    "prod":"npx tailwindcss -i tailwind.css -o ./assets/css/style.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "tailwindcss": "^3.3.2"
+  }
+}
