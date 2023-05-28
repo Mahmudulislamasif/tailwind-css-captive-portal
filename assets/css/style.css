@@ -595,6 +595,10 @@ h3 {
   left: 50%;
 }
 
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
 .m-5 {
   margin: 1.25rem;
 }
@@ -700,6 +704,47 @@ h3 {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-4\/6 {
+  height: 66.666667%;
+}
+
+.h-3\/6 {
+  height: 50%;
+}
+
+.h-4\/5 {
+  height: 80%;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-\[800px\] {
+  height: 800px;
+}
+
 .max-h-6 {
   max-height: 1.5rem;
 }
@@ -730,6 +775,14 @@ h3 {
 
 .w-full {
   width: 100%;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .-translate-y-1\/2 {
@@ -1119,6 +1172,12 @@ h3 {
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:h-\[800px\] {
+    height: 800px;
   }
 }
 
