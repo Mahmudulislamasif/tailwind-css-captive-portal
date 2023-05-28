@@ -13,21 +13,21 @@ module.exports = {
         "background":"url('../images/img/restaurant-image.png')",
       },
       screens:{
-        'sm': '640px',
+        'small': '640px',
         // => @media (min-width: 640px) { ... }
   
-        'md': '768px',
+        'medium': '768px',
         // => @media (min-width: 768px) { ... }
   
-        'lg': '1024px',
+        'large': '1024px',
         // => @media (min-width: 1024px) { ... }
   
-        'xl': '1280px',
+        'extra-large': '1280px',
         // => @media (min-width: 1280px) { ... }
   
-        '2xl': '1536px',
+        'double-extra-large': '1536px',
         // => @media (min-width: 1536px) { ... }
-        '3xl':'1920px',
+        'tripple-extra-large':'1920px',
       }
     },
   },
