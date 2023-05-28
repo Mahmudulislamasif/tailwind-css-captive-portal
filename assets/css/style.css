@@ -593,6 +593,10 @@ h3 {
   top: 50%;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -763,6 +767,10 @@ h3 {
   flex-direction: column;
 }
 
+.place-items-center {
+  place-items: center;
+}
+
 .items-center {
   align-items: center;
 }
@@ -793,6 +801,10 @@ h3 {
 
 .overflow-auto {
   overflow: auto;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .rounded-md {
