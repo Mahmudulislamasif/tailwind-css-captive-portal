@@ -22,8 +22,8 @@
           </div>
           <div class="mt-20">
             <div>
-              <h1>Welcome to Tasty Food <br> Wi-Fi Network</h1>
-              <h6>Enjoy your stay at Tasty Food and have a wonderful dining experience!</h6>
+              <h1 class="md:text-4xl text-2xl md:text-left text-center">Welcome to Tasty Food <br> Wi-Fi Network</h1>
+              <h6 class="md:text-sm text-xs md:text-left text-center">Enjoy your stay at Tasty Food and have a wonderful dining experience!</h6>
             </div>
             <div class="mb-4 mt-10r">
               <div class="flex w-full mt-10">
@@ -38,7 +38,19 @@
             </div>
             <div class="rounded-md border-[1px] border-[#A36D3D] text-center mt-10 py-5">
               <p class="text-base font-bold">Session Duration</p>
-              <p class="text-[#A36D3D] text">59 : 43 : 12</p>
+              <div class="text-[#A36D3D] text-2xl text flex items-center justify-center">
+                <div class="flex">
+                  <p id="hours">00</p>
+                  <p>:</p>
+                </div>
+                <div class="flex">
+                  <p id="minutes">00</p>
+                  <p>:</p>
+                </div>
+                <div class="flex">
+                  <p id="seconds">00</p>
+                </div>
+              </div>
             </div>
             <div class="bg-[#D9D9D9] w-full h-[2px] my-20">
             </div>
@@ -72,5 +84,6 @@
         </div>
     </div>
 </section>
+<script src="./assets/js/timer.js"></script>
 </body>
 </html>

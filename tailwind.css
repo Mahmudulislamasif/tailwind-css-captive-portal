@@ -4,11 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Nunito&family=Poppins&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap');
 @layer base {
     h1 {
-      @apply text-4xl font-medium;
+      @apply font-medium;
     }
     h6
     {
-      @apply text-[#21212] text-sm;
+      @apply text-[#21212];
     }
     h3
     {

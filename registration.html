@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Nunito&family=Poppins&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="font-poppins">
-        <div class="mx-auto flex md:w-full container m-5">
-            <div class="md:w-1/2 w-full bg-[#f5f5f5] pl-20 pr-20 py-5">
+    <section class="font-poppins md:bg-none bg-background bg-no-repeat object-cover min-h-screen">
+        <div class="mx-auto flex md:w-full container p-5">
+            <div class="md:w-1/2 w-full bg-[#f5f5f5] md:pl-20 md:pr-20 pl-5 pr-5 py-5 rounded-md">
               <div class="flex">
                  <div>
                     <img src="./assets/images/icon/restaurant-icon.png" alt="" class="mr-2">
@@ -22,48 +22,45 @@
               </div>
                <div class="mt-20">
                 <div>
-                  <h1>Welcome to Tasty Food</h1>
-                  <h6>Please enter your credentials to connect.</h6>
+                  <h1 class="md:text-4xl text-2xl md:text-left text-center">Welcome to Tasty Food</h1>
+                  <h6 class="md:text-sm text-xs md:text-left text-center">Please enter your credentials to connect.</h6>
                 </div>
                 <div class="mb-20 mt-10 flex flex-col gap-5">
                   <div>
-                      <label for="inputField" class="block text-sm font-medium text-[#212121]">Email</label>
-                      <input  type="email" class="mt-1 px-4 py-2 border border-gray-300 rounded-md bg-[#F5F5F5] focus:outline-none focus:ring-blue-500 focus:border-[#A36D3D] block w-full shadow-sm sm:text-sm"  placeholder="Enter your email">
+                      <label for="email" class="block text-sm font-medium text-[#212121]">Email</label>
+                      <input  type="email" class="mt-1 px-4 py-2 border border-gray-300 rounded-md bg-[#F5F5F5] focus:outline-none focus:ring-blue-500 focus:border-[#A36D3D] block w-full shadow-sm sm:text-sm"  placeholder="Enter your email" id="email">
                   </div>
                   <div>
-                      <label for="inputField" class="block text-sm font-medium text-gray-700">Table No*</label>
-                  <input  type="number" class="mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none bg-[#F5F5F5] focus:ring-blue-500 focus:border-[#A36D3D] block w-full shadow-sm sm:text-sm" placeholder="Enter your table number">
+                      <label for="table" class="block text-sm font-medium text-gray-700">Table No*</label>
+                  <input  type="text" class="mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none bg-[#F5F5F5] focus:ring-blue-500 focus:border-[#A36D3D] block w-full shadow-sm sm:text-sm" placeholder="Enter your table number" id="table">
                   </div>
                   <div>
-                      <label for="inputField" class="block text-sm font-medium text-gray-700">Password</label>
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <div class="relative">
+                        <input type="password" id="password" class="mt-1 px-4 py-2 border border-gray-300 bg-[#F5F5F5] rounded-md focus:outline-none focus:ring-blue-500 focus:border-[#A36D3D] block w-full shadow-sm sm:text-sm" placeholder="Enter password">
+                        <span class="password-toggle absolute top-1/2 right-3 transform -translate-y-1/2 cursor-pointer">
+                          <img id="hide-password" src="./assets/images/icon/Hide.png" alt="Show Password" onclick="passwordToggle()">
+                        </span>
+                      </div>
+                </div>
+                  <div>
+                      <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
                       <div class="relative">
-                          <input id="inputField" type="password" class="mt-1 px-4 py-2 border border-gray-300 bg-[#F5F5F5] rounded-md focus:outline-none focus:ring-blue-500 focus:border-[#A36D3D] block w-full shadow-sm sm:text-sm"  placeholder="Enter your password">
-                          <span class="password-toggle absolute top-1/2 right-3 transform -translate-y-1/2 cursor-pointer">
-                            <img class="show-password" src="./assets/images/icon/Hide.png" alt="Show Password">
-                          </span>
-                        </div>
-  
-                  </div>
-                  <div>
-                      <label for="inputField" class="block text-sm font-medium text-gray-700">Confirm Password</label>
-                      <div class="relative">
-                          <input id="inputField" type="password" class="mt-1 px-4 py-2 border border-gray-300 bg-[#F5F5F5] rounded-md focus:outline-none focus:ring-blue-500 focus:border-[#A36D3D] block w-full shadow-sm sm:text-sm" placeholder="Enter your confirm password">
+                          <input id="confirm-password" type="password" class="mt-1 px-4 py-2 border border-gray-300 bg-[#F5F5F5] rounded-md focus:outline-none focus:ring-blue-500 focus:border-[#A36D3D] block w-full shadow-sm sm:text-sm" placeholder="Enter your confirm password" >
                           <span class="absolute top-1/2 right-3 transform -translate-y-1/2 cursor-pointer">
-                            <img class="show-password" src="./assets/images/icon/Hide.png" alt="Show Password">
+                            <img id="confirm-password-toggle" class="show-password" src="./assets/images/icon/Hide.png" alt="Show Password" onclick="confirmPasswordToggle()">
                           </span>
                         </div>
                   </div>
                 </div>
                 <div class="flex mt-5">
-                  <input type="checkbox" name="" id="">
+                  <input type="checkbox" name="checkbox" id="checkbox">
                 <p class="text-sm  flex ml-2">By registering, I accept the <a href="./terms&condition.html"><span class="flex justify-end text-[#A36D3D]  underline mx-1">Terms & Conditions</span></a> of Tasty Food.</p>
                 </div>
-                <button class="w-full bg-[#A36D3D] rounded-md my-5">
-                  <div class="flex items-center justify-center py-2 ">
-                      <span class="text-white">Register</span>  
-                  </div>
+                <button class="w-full bg-[#A36D3D] rounded-md my-5 py-2 flex items-center justify-center ">
+                  <span class="text-white">Register</span>  
                 </button>
-                <h6 class="text-center">Already have an account?  <a href="./index.html"><span class="text-[#A36D3D]  underline">Sign in</span></a></p>
+                <h6 class="text-center">Already have an account?  <a href="./index.html"><span class="text-[#A36D3D]  underline">Sign in</span></a></h6>
                </div>
             </div>
             <div class="md:flex hidden w-1/2">
@@ -71,6 +68,6 @@
             </div>
         </div>
     </section>
-    <script src="./javascript/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
