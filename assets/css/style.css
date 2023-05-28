@@ -1179,9 +1179,21 @@ h3 {
   .xl\:h-\[800px\] {
     height: 800px;
   }
+
+  .xl\:h-\[900px\] {
+    height: 900px;
+  }
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:h-\[1200px\] {
+    height: 1200px;
+  }
+
+  .\32xl\:h-\[1000px\] {
+    height: 1000px;
+  }
+
   .\32xl\:object-cover {
     -o-object-fit: cover;
        object-fit: cover;
