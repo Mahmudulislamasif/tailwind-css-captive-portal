@@ -11,6 +11,7 @@ module.exports = {
       },
       backgroundImage:{
         "background":"url('../images/img/restaurant-image.png')",
+        "background-two":"url('../images/img/bg.png')"
       },
       screens:{
         'small': '640px',
