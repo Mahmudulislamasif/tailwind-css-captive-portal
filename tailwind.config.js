@@ -10,7 +10,7 @@ module.exports = {
         "poppins":["Poppins"]
       },
       backgroundImage:{
-        "background":"url('../assets/image/restaurant-image.png')",
+        "background":"url('../images/img/restaurant-image.png')",
       }
     },
   },
