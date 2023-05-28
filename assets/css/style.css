@@ -702,6 +702,10 @@ h3 {
   margin-bottom: 8rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .block {
   display: block;
 }
@@ -1091,6 +1095,14 @@ h3 {
 
   .md\:w-3\/5 {
     width: 60%;
+  }
+
+  .md\:w-1\/5 {
+    width: 20%;
+  }
+
+  .md\:w-2\/5 {
+    width: 40%;
   }
 
   .md\:grid-cols-2 {
