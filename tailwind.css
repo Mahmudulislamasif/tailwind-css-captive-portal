@@ -3,9 +3,6 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Nunito&family=Poppins&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap');
 @layer base {
-    h1 {
-      @apply font-medium;
-    }
     h6
     {
       @apply text-[#21212];
@@ -24,6 +21,14 @@
   .section-container
   {
     @apply md:w-[56%] w-full bg-secondary-0  bg-background-two bg-cover bg-no-repeat tripple-extra-large:pl-72 tripple-extra-large:pr-72 double-extra-large:pl-56 double-extra-large:pr-56  extra-large:pr-44 extra-large:pl-44 large:pl-32 large:pr-32 md:pl-20 md:pr-20 pl-5 pr-5 py-5 rounded-md flex flex-col justify-center md:m-0 m-4;
+  }
+  .icon-container
+  {
+    @apply md:absolute md:top-4 flex items-center justify-center gap-1;
+  }
+  .heading-h1
+  {
+    @apply md:text-4xl text-2xl md:text-left text-center font-medium mb-2;
   }
   label
   {
