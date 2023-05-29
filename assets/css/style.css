@@ -666,6 +666,14 @@ h3 {
   height: 100%;
 }
 
+.h-\[600px\] {
+  height: 600px;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -674,32 +682,16 @@ h3 {
   width: 50%;
 }
 
-.w-2\/5 {
-  width: 40%;
-}
-
 .w-\[131px\] {
   width: 131px;
 }
 
-.w-\[46\%\] {
-  width: 46%;
+.w-\[44\%\] {
+  width: 44%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[44\] {
-  width: 44;
-}
-
-.w-\[44\%\] {
-  width: 44%;
 }
 
 .-translate-y-1\/2 {
@@ -827,14 +819,6 @@ h3 {
   background-image: url('../images/img/bg.png');
 }
 
-.bg-contain {
-  background-size: contain;
-}
-
-.bg-auto {
-  background-size: auto;
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -953,6 +937,10 @@ h3 {
   accent-color: #A36D3D;
 }
 
+.opacity-50 {
+  opacity: 0.5;
+}
+
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -1034,6 +1022,18 @@ h3 {
     padding: 0px;
   }
 
+  .md\:pl-20 {
+    padding-left: 5rem;
+  }
+
+  .md\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .md\:pr-20 {
+    padding-right: 5rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -1050,12 +1050,36 @@ h3 {
 }
 
 @media (min-width: 1024px) {
+  .lg\:pr-72 {
+    padding-right: 18rem;
+  }
+
+  .lg\:pl-72 {
+    padding-left: 18rem;
+  }
+
   .large\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .large\:pl-32 {
+    padding-left: 8rem;
+  }
+
+  .large\:pr-32 {
+    padding-right: 8rem;
   }
 }
 
 @media (min-width: 1280px) {
+  .xl\:pr-72 {
+    padding-right: 18rem;
+  }
+
+  .xl\:pl-72 {
+    padding-left: 18rem;
+  }
+
   .extra-large\:gap-5 {
     gap: 1.25rem;
   }
@@ -1067,9 +1091,25 @@ h3 {
   .extra-large\:pr-10 {
     padding-right: 2.5rem;
   }
+
+  .extra-large\:pr-44 {
+    padding-right: 11rem;
+  }
+
+  .extra-large\:pl-44 {
+    padding-left: 11rem;
+  }
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:pr-72 {
+    padding-right: 18rem;
+  }
+
+  .\32xl\:pl-72 {
+    padding-left: 18rem;
+  }
+
   .double-extra-large\:gap-10 {
     gap: 2.5rem;
   }
@@ -1080,6 +1120,14 @@ h3 {
 
   .double-extra-large\:pr-20 {
     padding-right: 5rem;
+  }
+
+  .double-extra-large\:pl-56 {
+    padding-left: 14rem;
+  }
+
+  .double-extra-large\:pr-56 {
+    padding-right: 14rem;
   }
 }
 
