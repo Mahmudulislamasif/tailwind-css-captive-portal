@@ -633,6 +633,18 @@ h3 {
   }
 }
 
+.paragraph-p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .paragraph-p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 label {
   margin-bottom: 10px;
   display: block;
@@ -734,20 +746,12 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   margin-bottom: 2.25rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
 }
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .mt-24 {
@@ -922,10 +926,6 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
      object-fit: cover;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -949,6 +949,10 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
 }
 
 .text-center {
@@ -1017,6 +1021,11 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
 }
 
 @media (min-width: 768px) {
+  .md\:my-14 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
   .md\:flex {
     display: flex;
   }

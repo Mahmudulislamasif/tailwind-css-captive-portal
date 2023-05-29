@@ -30,6 +30,10 @@
   {
     @apply md:text-4xl text-2xl md:text-left text-center font-medium mb-2;
   }
+  .paragraph-p
+  {
+    @apply md:text-base text-sm;
+  }
   label
   {
     @apply block text-sm font-bold text-primary-0 mb-[10px]
