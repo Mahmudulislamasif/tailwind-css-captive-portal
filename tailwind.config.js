@@ -6,6 +6,11 @@ module.exports = {
       fontSize:{
         "extra-large":["48px"]
       },
+      colors:{
+        "primary":["#212121"],
+        "secondary":["#F5F5F5"],
+        "main":["#A36D3D"]
+      },
       fontFamily:{
         "poppins":["Poppins"]
       },
