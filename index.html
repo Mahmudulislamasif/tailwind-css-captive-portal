@@ -9,13 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Nunito&family=Poppins&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
+   <!-- Contains whole page to section -->
     <section class="main-container">
+        <!-- There is two part for form and image -->
         <div class="flex">
+          <!-- This section contains form with icon and button -->
             <div class="section-container">
+              <!-- This field is only for restaurant icon -->
                 <div class="md:absolute md:top-4 flex items-center">
                   <img src="./assets/images/icon/restaurant-icon.png" alt="" class="mr-2">
                    <img src="./assets/images/icon/icon-title.png" alt="" >
                 </div>
+                <!-- This section contains title and form -->
                <div class="mt-24">
                  <div>
                    <h1 class="md:text-4xl text-2xl md:text-left text-center">Welcome to Tasty</h1>
@@ -42,13 +47,13 @@
                  </div>
                  <a href="" class="flex justify-end text-[#A36D3D]  underline text-sm font-bold">Forget Password</a>
                 <div>
-                  <div class="flex items-center mt-9 mb-11">
+                  <div class="flex items-center my-9">
                      <div class="bg-[#D9D9D9] h-[1.5px] w-1/2"></div>
                      <div class="text-[#212121] text-sm mx-3">OR</div>
                      <div class="bg-[#D9D9D9] h-[1.5px] w-1/2"></div>
                  </div>
-                 <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 w-full">
-                   <button class=" bg-white flex  items-center justify-center rounded-md px-5 py-3 mr-5 w-full ">
+                 <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 w-full mb-9">
+                   <button class=" bg-white flex  items-center justify-center rounded-md px-5 py-3 w-full ">
                        <img src="./assets/images/icon/google.png" alt="" class="mr-2">
                        <span class="text-[#212121] text-sm font-bold">Sign in with Google</span>
                    </button>
@@ -58,8 +63,12 @@
                    </button>
                  </div>
                  <div class="flex mt-5 items-start">
-                 <input type="checkbox" name="checkbox" id="checkbox"  class="accent-[#A36D3D] w-4 h-4 rounded-full">
-                 <p class="text-sm ml-2">By connecting, I accept the <a href="./terms&condition.html"><span class="text-[#A36D3D]  underline mx-1 font-bold">Terms & Conditions</span></a> of Tasty Food.</p>
+                 <div>
+                  <input type="checkbox" name="checkbox" id="checkbox"  class="accent-[#A36D3D]">
+                 </div>
+                 <div>
+                  <p class="text-base ml-2">By connecting, I accept the <a href="./terms&condition.html"><span class="text-[#A36D3D]  underline mx-1 font-bold">Terms & Conditions</span></a> of Tasty Food.</p>
+                 </div>
                  </div>
                  <div class="w-full bg-[#A36D3D] rounded-md my-5 flex items-center justify-center">
                    <a class="flex items-center py-3 " href="./timer.html" id="connectButton">
@@ -71,6 +80,7 @@
                 </div>
                </div>
             </div>
+            <!-- This section contains for image which is in right sight of form -->
             <div class="md:flex hidden w-[44%] relative">
               <img src="./assets/images/img/restaurant-image.png" alt="" class=" w-full object-cover absolute h-full">
             </div>

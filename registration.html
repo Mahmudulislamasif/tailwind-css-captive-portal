@@ -9,13 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Nunito&family=Poppins&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
+     <!-- Contains whole page to section -->
     <section class="main-container">
-        <div class="flex w-full">
+       <!-- There is two part for form and image -->
+        <div class="flex">
+             <!-- This section contains form with icon and button -->
             <div class="section-container">
+                  <!-- This field is only for restaurant icon -->
               <div class="md:absolute md:top-4 flex items-center">
                 <img src="./assets/images/icon/restaurant-icon.png" alt="" class="mr-2">
                  <img src="./assets/images/icon/icon-title.png" alt="" >
               </div>
+               <!-- This section contains title and form -->
                <div class="mt-24">
                 <div>
                   <h1 class="md:text-4xl text-2xl md:text-left text-center">Welcome to Tasty Food</h1>
@@ -49,16 +54,21 @@
                         </div>
                   </div>
                 </div>
-                <div class="flex">
-                  <input type="checkbox" name="checkbox" id="checkbox" class="accent-[#A36D3D]">
-                  <p class="text-sm ml-2">By connecting, I accept the <a href="./terms&condition.html"><span class="text-[#A36D3D]  underline mx-1 font-bold">Terms & Conditions</span></a> of Tasty Food.</p>
-                </div>
+                <div class="flex mt-5 items-start">
+                  <div>
+                   <input type="checkbox" name="checkbox" id="checkbox"  class="accent-[#A36D3D]">
+                  </div>
+                  <div>
+                   <p class="text-base ml-2">By connecting, I accept the <a href="./terms&condition.html"><span class="text-[#A36D3D]  underline mx-1 font-bold">Terms & Conditions</span></a> of Tasty Food.</p>
+                  </div>
+                  </div>
                 <button class="w-full bg-[#A36D3D] rounded-md my-5 py-3 flex items-center justify-center">
                   <span class="text-white">Register</span>  
                 </button>
                 <h6 class="text-center">Already have an account?  <a href="./index.html"><span class="text-[#A36D3D]  underline font-bold">Sign in</span></a></h6>
                </div>
             </div>
+              <!-- This section contains for image which is in right sight of form -->
             <div class="md:flex hidden w-[44%] relative">
               <img src="./assets/images/img/restaurant-image.png" alt="" class="w-full object-cover absolute h-full">
             </div>
