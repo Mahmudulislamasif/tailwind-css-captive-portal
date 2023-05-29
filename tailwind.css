@@ -28,7 +28,7 @@
   }
   .heading-h1
   {
-    @apply md:text-4xl text-2xl md:text-left text-center font-medium mb-2;
+    @apply md:text-4xl text-2xl md:text-left text-center md:font-medium font-semibold mb-2;
   }
   .paragraph-p
   {
