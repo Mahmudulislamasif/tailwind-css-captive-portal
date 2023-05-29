@@ -9,14 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Nunito&family=Poppins&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="font-poppins md:bg-none bg-background grid min-h-screen">
+    <section class="main-container">
         <div class="flex w-full">
-            <div class="md:w-[56%] w-full bg-background-two bg-cover tripple-extra-large:pl-72 tripple-extra-large:pr-72 double-extra-large:pl-20 double-extra-large:pr-20  extra-large:pr-10 extra-large:pl-10 pl-5 pr-5 py-5 rounded-md md:flex md:flex-col md:justify-center">
+            <div class="section-container">
               <div class="md:absolute md:top-4 flex items-center">
                 <img src="./assets/images/icon/restaurant-icon.png" alt="" class="mr-2">
                  <img src="./assets/images/icon/icon-title.png" alt="" >
               </div>
-               <div class="mt-20">
+               <div class="mt-24">
                 <div>
                   <h1 class="md:text-4xl text-2xl md:text-left text-center">Welcome to Tasty Food</h1>
                   <h6 class="md:text-sm text-xs md:text-left text-center">Please enter your credentials to connect.</h6>
@@ -24,16 +24,16 @@
                 <div class="mb-24 mt-10 flex flex-col gap-10">
                   <div>
                       <label for="email" class="block text-sm font-bold text-[#212121]">Email*</label>
-                      <input  type="email" class="mt-1 px-4 py-3 border border-gray-300 rounded-md bg-[#F5F5F5] focus:outline-none focus:ring-blue-500 focus:border-[#A36D3D] block w-full shadow-sm sm:text-sm"  placeholder="Enter your email" id="email">
+                      <input  type="email" placeholder="Enter your email" id="email">
                   </div>
                   <div>
                       <label for="table" class="block text-sm font-bold text-gray-700">Table No*</label>
-                  <input  type="text" class="mt-1 px-4 py-3 border border-gray-300 rounded-md focus:outline-none bg-[#F5F5F5] focus:ring-blue-500 focus:border-[#A36D3D] block w-full shadow-sm sm:text-sm" placeholder="Enter your table number" id="table">
+                      <input  type="text" placeholder="Enter your table number" id="table">
                   </div>
                   <div>
                     <label for="password" class="block text-sm font-bold text-gray-700">Password</label>
                     <div class="relative">
-                        <input type="password" id="password" class="mt-1 px-4 py-3 border border-gray-300 bg-[#F5F5F5] rounded-md focus:outline-none focus:ring-blue-500 focus:border-[#A36D3D] block w-full shadow-sm sm:text-sm" placeholder="Enter password">
+                        <input type="password" id="password" placeholder="Enter password">
                         <span class="password-toggle absolute top-1/2 right-3 transform -translate-y-1/2 cursor-pointer">
                           <img id="hide-password" src="./assets/images/icon/Hide.png" alt="Show Password" onclick="passwordToggle()">
                         </span>
@@ -42,7 +42,7 @@
                   <div>
                       <label for="confirm-password" class="block text-sm font-bold text-gray-700">Confirm Password*</label>
                       <div class="relative">
-                          <input id="confirm-password" type="password" class="mt-1 px-4 py-3 border border-gray-300 bg-[#F5F5F5] rounded-md focus:outline-none focus:ring-blue-500 focus:border-[#A36D3D] block w-full shadow-sm sm:text-sm" placeholder="Enter your confirm password" >
+                          <input id="confirm-password" type="password" placeholder="Enter your confirm password" >
                           <span class="absolute top-1/2 right-3 transform -translate-y-1/2 cursor-pointer">
                             <img id="confirm-password-toggle" class="show-password" src="./assets/images/icon/Hide.png" alt="Show Password" onclick="confirmPasswordToggle()">
                           </span>
