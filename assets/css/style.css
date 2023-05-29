@@ -540,7 +540,16 @@ h3 {
 .main-container {
   display: grid;
   min-height: 100vh;
+  background-image: url('../images/img/restaurant-image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: Poppins;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    background-image: none;
+  }
 }
 
 .section-container {
@@ -608,7 +617,7 @@ label {
   color: rgb(33 33 33 / var(--tw-text-opacity));
 }
 
-input[type=email], input[type=number], input[type=password],input[type=text] {
+input[type=email], input[type=number], input[type=password] {
   margin-top: 0.25rem;
   display: block;
   width: 100%;
@@ -627,7 +636,7 @@ input[type=email], input[type=number], input[type=password],input[type=text] {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-input[type=email]:focus, input[type=number]:focus, input[type=password]:focus,input[type=text]:focus {
+input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   --tw-border-opacity: 1;
   border-color: rgb(163 109 61 / var(--tw-border-opacity));
   outline: 2px solid transparent;
@@ -635,7 +644,7 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus,in
 }
 
 @media (min-width: 640px) {
-  input[type=email], input[type=number], input[type=password],input[type=text] {
+  input[type=email], input[type=number], input[type=password] {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
@@ -724,10 +733,6 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus,in
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
 }
 
 .block {

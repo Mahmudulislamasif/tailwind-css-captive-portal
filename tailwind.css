@@ -19,7 +19,7 @@
 {
   .main-container
   {
-    @apply font-poppins grid min-h-screen;
+    @apply font-poppins grid min-h-screen md:bg-none bg-background  bg-cover bg-no-repeat;
   }
   .section-container
   {
@@ -29,7 +29,7 @@
   {
     @apply block text-sm font-bold text-primary-0 mb-[10px]
   }
-  input[type=email], input[type=number], input[type=password],input[type=text]
+  input[type=email], input[type=number], input[type=password]
   {
     @apply mt-1 px-4 py-3 border border-primary-0 border-opacity-25 rounded-md bg-secondary-0 focus:outline-none focus:border-main-0 block w-full shadow-sm sm:text-sm;
   }
