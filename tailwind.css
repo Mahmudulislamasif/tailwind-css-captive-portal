@@ -25,6 +25,10 @@
   {
     @apply md:w-[56%] w-full bg-[#F5F5F5]  bg-background-two bg-cover bg-no-repeat tripple-extra-large:pl-72 tripple-extra-large:pr-72 double-extra-large:pl-56 double-extra-large:pr-56  extra-large:pr-44 extra-large:pl-44 large:pl-32 large:pr-32 md:pl-20 md:pr-20 pl-5 pr-5 py-5 rounded-md flex flex-col justify-center md:m-0 m-4;
   }
+  label
+  {
+    @apply block text-sm font-bold text-[#212121] mb-[10px]
+  }
   input[type=email], input[type=number], input[type=password],input[type=text]
   {
     @apply mt-1 px-4 py-3 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-blue-500 focus:border-[#A36D3D] block w-full shadow-sm sm:text-sm;

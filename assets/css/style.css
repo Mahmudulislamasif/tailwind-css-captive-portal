@@ -598,6 +598,16 @@ h3 {
   }
 }
 
+label {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(33 33 33 / var(--tw-text-opacity));
+}
+
 input[type=email], input[type=number], input[type=password],input[type=text] {
   margin-top: 0.25rem;
   display: block;
@@ -758,16 +768,8 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus,in
   height: 500px;
 }
 
-.h-\[83px\] {
-  height: 83px;
-}
-
 .h-full {
   height: 100%;
-}
-
-.min-h-screen {
-  min-height: 100vh;
 }
 
 .w-1\/2 {
@@ -778,20 +780,12 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus,in
   width: 1rem;
 }
 
-.w-\[131px\] {
-  width: 131px;
-}
-
 .w-\[44\%\] {
   width: 44%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[44\] {
-  width: 44;
 }
 
 .-translate-y-1\/2 {
@@ -904,27 +898,9 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus,in
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#f5f5f5\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-purple-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(147 51 234 / var(--tw-bg-opacity));
-}
-
-.bg-background {
-  background-image: url('../images/img/restaurant-image.png');
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
 }
 
 .object-cover {
@@ -932,8 +908,9 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus,in
      object-fit: cover;
 }
 
-.p-2 {
-  padding: 0.5rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-5 {
@@ -956,30 +933,8 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus,in
   padding-bottom: 1.25rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.pl-5 {
-  padding-left: 1.25rem;
-}
-
-.pr-5 {
-  padding-right: 1.25rem;
-}
-
 .text-center {
   text-align: center;
-}
-
-.font-poppins {
-  font-family: Poppins;
 }
 
 .text-2xl {
@@ -1061,36 +1016,12 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus,in
     display: flex;
   }
 
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
-  .md\:w-2\/5 {
-    width: 40%;
-  }
-
-  .md\:w-3\/5 {
-    width: 60%;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .md\:flex-col {
-    flex-direction: column;
-  }
-
-  .md\:justify-center {
-    justify-content: center;
-  }
-
-  .md\:bg-none {
-    background-image: none;
   }
 
   .md\:text-left {
@@ -1118,36 +1049,10 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus,in
   .extra-large\:gap-5 {
     gap: 1.25rem;
   }
-
-  .extra-large\:pl-10 {
-    padding-left: 2.5rem;
-  }
-
-  .extra-large\:pr-10 {
-    padding-right: 2.5rem;
-  }
 }
 
 @media (min-width: 1536px) {
   .double-extra-large\:gap-10 {
     gap: 2.5rem;
-  }
-
-  .double-extra-large\:pl-20 {
-    padding-left: 5rem;
-  }
-
-  .double-extra-large\:pr-20 {
-    padding-right: 5rem;
-  }
-}
-
-@media (min-width: 1920px) {
-  .tripple-extra-large\:pl-56 {
-    padding-left: 14rem;
-  }
-
-  .tripple-extra-large\:pr-56 {
-    padding-right: 14rem;
   }
 }
