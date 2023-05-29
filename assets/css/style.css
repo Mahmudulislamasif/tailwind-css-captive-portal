@@ -911,6 +911,10 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
      object-fit: cover;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -938,6 +942,10 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-2xl {
