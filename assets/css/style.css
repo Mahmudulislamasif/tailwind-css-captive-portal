@@ -593,10 +593,11 @@ h6 {
 }
 
 h3 {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 700;
-  color: #21212;
+  --tw-text-opacity: 1;
+  color: rgb(33 33 33 / var(--tw-text-opacity));
 }
 
 *, ::before, ::after {
@@ -697,6 +698,46 @@ h3 {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
 }
 
 .main-container {
@@ -813,7 +854,7 @@ h3 {
   }
 }
 
-label {
+.input-label {
   margin-bottom: 10px;
   display: block;
   font-size: 0.875rem;
@@ -823,7 +864,7 @@ label {
   color: rgb(33 33 33 / var(--tw-text-opacity));
 }
 
-input[type=email], input[type=number], input[type=password] {
+.input-type {
   margin-top: 0.25rem;
   display: block;
   width: 100%;
@@ -842,15 +883,17 @@ input[type=email], input[type=number], input[type=password] {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
+.input-type:focus {
   --tw-border-opacity: 1;
   border-color: rgb(163 109 61 / var(--tw-border-opacity));
   outline: 2px solid transparent;
   outline-offset: 2px;
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(163 109 61 / var(--tw-ring-opacity));
 }
 
 @media (min-width: 640px) {
-  input[type=email], input[type=number], input[type=password] {
+  .input-type {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
@@ -872,6 +915,14 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   top: 50%;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -887,9 +938,19 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   margin-right: auto;
 }
 
+.my-14 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .my-5 {
@@ -902,9 +963,18 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   margin-bottom: 2.25rem;
 }
 
-.my-14 {
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
+.my-\[60px\] {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.my-\[30px\] {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.-mt-9 {
+  margin-top: -2.25rem;
 }
 
 .mb-24 {
@@ -923,6 +993,10 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   margin-right: 0.5rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -937,6 +1011,42 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.-mt-20 {
+  margin-top: -5rem;
+}
+
+.-mt-36 {
+  margin-top: -9rem;
+}
+
+.-mt-32 {
+  margin-top: -8rem;
+}
+
+.mt-\[60px\] {
+  margin-top: 60px;
+}
+
+.-mt-\[100p\] {
+  margin-top: -100p;
+}
+
+.-mt-\[100px\] {
+  margin-top: -100px;
+}
+
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mb-\[100px\] {
+  margin-bottom: 100px;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .block {
@@ -983,6 +1093,10 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   width: 50%;
 }
 
+.w-2\/6 {
+  width: 33.333333%;
+}
+
 .w-5 {
   width: 1.25rem;
 }
@@ -993,6 +1107,18 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
 
 .w-full {
   width: 100%;
+}
+
+.w-4\/6 {
+  width: 66.666667%;
+}
+
+.w-3\/6 {
+  width: 50%;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .-translate-y-1\/2 {
@@ -1036,6 +1162,10 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -1052,12 +1182,24 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   gap: 1.25rem;
 }
 
+.gap-\[\] {
+  gap: ;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
+}
+
 .overflow-auto {
   overflow: auto;
 }
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border {
@@ -1087,6 +1229,21 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
+.border-primary-0 {
+  --tw-border-opacity: 1;
+  border-color: rgb(33 33 33 / var(--tw-border-opacity));
+}
+
+.border-sky-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(14 165 233 / var(--tw-border-opacity));
+}
+
+.border-\[\#3D84A3\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(61 132 163 / var(--tw-border-opacity));
+}
+
 .border-opacity-25 {
   --tw-border-opacity: 0.25;
 }
@@ -1106,14 +1263,33 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F7F7F7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+}
+
+.bg-secondary-0 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#3D84A3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(61 132 163 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-\[60px\] {
+  padding: 60px;
 }
 
 .px-4 {
@@ -1146,6 +1322,11 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   padding-bottom: 1.25rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pr-3 {
   padding-right: 0.75rem;
 }
@@ -1158,9 +1339,18 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   text-align: justify;
 }
 
+.font-poppins {
+  font-family: Poppins;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-base {
@@ -1173,17 +1363,35 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   line-height: 1.25rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-normal {
   font-weight: 400;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .text-\[\#212121\] {
   --tw-text-opacity: 1;
   color: rgb(33 33 33 / var(--tw-text-opacity));
+}
+
+.text-\[\#282828\] {
+  --tw-text-opacity: 1;
+  color: rgb(40 40 40 / var(--tw-text-opacity));
 }
 
 .text-\[\#A36D3D\] {
@@ -1196,8 +1404,34 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#3D84A3\] {
+  --tw-text-opacity: 1;
+  color: rgb(61 132 163 / var(--tw-text-opacity));
+}
+
+.text-purple-500 {
+  --tw-text-opacity: 1;
+  color: rgb(168 85 247 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
+}
+
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.focus\:border-main-0:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(163 109 61 / var(--tw-border-opacity));
+}
+
+.focus\:border-\[\#3D84A3\]:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(61 132 163 / var(--tw-border-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -1205,22 +1439,48 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   outline-offset: 2px;
 }
 
+.focus\:ring-main-0:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(163 109 61 / var(--tw-ring-opacity));
+}
+
 .focus\:ring-transparent:focus {
   --tw-ring-color: transparent;
 }
 
-@media (min-width: 768px) {
-  .md\:my-14 {
-    margin-top: 3.5rem;
-    margin-bottom: 3.5rem;
-  }
+.focus\:ring-\[\]:focus {
+  --tw-ring-color: ;
+}
 
+.focus\:ring-\[\#3D84A3\]:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(61 132 163 / var(--tw-ring-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
   .md\:mt-0 {
     margin-top: 0px;
   }
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:-translate-y-2\/4 {
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:-translate-x-2\/4 {
+    --tw-translate-x: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .md\:grid-cols-4 {
@@ -1230,21 +1490,62 @@ input[type=email]:focus, input[type=number]:focus, input[type=password]:focus {
   .md\:text-left {
     text-align: left;
   }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:-mt-\[40px\] {
+    margin-top: -40px;
+  }
+
+  .lg\:-mt-\[140px\] {
+    margin-top: -140px;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1280px) {
+  .xl\:-mt-32 {
+    margin-top: -8rem;
+  }
+
+  .xl\:-mt-\[6px\] {
+    margin-top: -6px;
+  }
+
+  .xl\:-mt-\[60px\] {
+    margin-top: -60px;
+  }
+
+  .xl\:-mt-\[100px\] {
+    margin-top: -100px;
+  }
+
+  .xl\:-mt-\[120px\] {
+    margin-top: -120px;
+  }
+
+  .xl\:w-3\/6 {
+    width: 50%;
+  }
+
   .extra-large\:gap-5 {
     gap: 1.25rem;
   }
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:w-2\/6 {
+    width: 33.333333%;
+  }
+
   .double-extra-large\:gap-10 {
     gap: 2.5rem;
   }
