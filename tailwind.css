@@ -24,7 +24,7 @@
   }
   .icon-container
   {
-    @apply md:absolute  md:top-4 top-10 flex items-center justify-center gap-1;
+    @apply md:absolute static  md:top-4 top-0 flex items-center justify-center gap-1;
   }
   .heading-h1
   {
